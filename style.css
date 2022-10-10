@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+
+
+.headerbg {
+    background-image: url("headerbg.png");
+    margin: 0px;
+}
+
+.header {
+    font-family: 'Major Mono Display', monospace;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding: 80px;
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+}
+
+.header-button {
+    color: white;
+    background: none;
+    border: none;
+    font-family: 'Major Mono Display', monospace;
+    float: right;
+    font-size: 30px;
+    margin-left: 40px;
+    transition: 0.2s;
+}
+
+.header-button:hover {
+    cursor: pointer;
+    color: grey;
+    transition: 0.2s;
+}
+
+.separator {
+    margin: auto;
+    display: flex;
+    width: 99.9%;
+    border: 1px black solid;
+}
+
+.separator2 {
+    margin-left: 40px;
+    width: 450px;
+    border: 1px white solid;
+}
+.separator3 {
+    margin: auto;
+    display: flex;
+    width: 99.9%;
+    border: 0.5px white solid;
+}
+
+.a777 {
+    background-image: url("777bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
+.a737 {
+    background-image: url("737bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
+.install {
+    background-image: url("installbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+
+.b777 {
+    width: 1000px;
+    height: 450px;
+    margin: 0px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 1));
+}
+
+.b737 {
+    width: 1000px;
+    height: 415px;
+    margin: 0px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 1));
+}
+
+.title777 {
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    margin: 0px;
+    font-weight: 200;
+    padding-top: 70px;
+    padding-left: 40px;
+}
+
+.info777 {
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.info2 {
+    color: white;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 10px;
+    padding-left: 40px;
+}
+
+.boeing777 {
+    width: 100%;
+    background: black;
+}
+
+.boeing737 {
+    width: 100%;
+    background: black;
+}
+
+#install-block {
+    width: 100%;
+    background: black;
+}
+
+.download-button {
+    float: right;
+    margin-top: 100px;
+    margin-right: 250px;
+    font-size: 25px;
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+    background: none;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    cursor: pointer;
+    color: grey;
+    transition: 0.2s;
+}
+
+.video {
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+    background: none;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+footer {
+    background: black;
+    margin: 0px;
+    padding: 20px;
+}
+
+#footerp {
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 15px;
+    color: white;
+}
