@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSFS2020 Boeing Aircraft/liveries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="photos/other/favicon.png">
+</head>
+<body>
+    <div class="headerbg"> 
+        <div class="header">
+            Msfs2020 777 - 737
+            <button onClick="document.getElementById('install-block').scrollIntoView();" class="header-button">how to install</button>
+            <a class="header-button" href="index.html">home</a>
+        </div>
+    </div>
+    <div class="liveriesbox">
+        <p class="liveries-header">liveries</p>
+    </div>
+    <p class="aircraft-selection-header">aircraft selection</p>
+    <div class="liveries-box1">
+        <button onclick="boeing737()" class="aircraft-selection">737-800</button>
+        <button onclick="boeing777()" class="aircraft-selection2">777-200</button>
+    </div>
+    <div id="liveries-box2">
+        <div class="grid">
+            <div class="liverie">
+                <div class="liverie-info">
+                    <p class="liverie-title">united airlines liverie</p>
+                    <p class="liverie-info1">file size: 64.69mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie2">
+                <div class="liverie-info">
+                    <p class="liverie-title">southwest airlines liverie</p>
+                    <p class="liverie-info1">file size: 1.01gb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie3">
+                <div class="liverie-info">
+                    <p class="liverie-title">ups cargo liverie</p>
+                    <p class="liverie-info1">file size: 60mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie4">
+                <div class="liverie-info">
+                    <p class="liverie-title">alaska airlines liverie</p>
+                    <p class="liverie-info1">file size: 200mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie5">
+                <div class="liverie-info">
+                    <p class="liverie-title">ryanair liverie</p>
+                    <p class="liverie-info1">file size: 195mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie6">
+                <div class="liverie-info">
+                    <p class="liverie-title">egyptair liverie</p>
+                    <p class="liverie-info1">file size: 127mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="liveries-box3">
+        <div class="grid">
+            <div class="liverie-777">
+                <div class="liverie-info">
+                    <p class="liverie-title">north american airlines liverie</p>
+                    <p class="liverie-info1">file size: 79mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie-777-2">
+                <div class="liverie-info">
+                    <p class="liverie-title">united airlines(1990) liverie</p>
+                    <p class="liverie-info1">file size: 47mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie-777-3">
+                <div class="liverie-info">
+                    <p class="liverie-title">aeromexico liverie</p>
+                    <p class="liverie-info1">file size: 33mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie-777-4">
+                <div class="liverie-info">
+                    <p class="liverie-title">continental airlines liverie</p>
+                    <p class="liverie-info1">file size: 66mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie-777-5">
+                <div class="liverie-info">
+                    <p class="liverie-title">united airlines(tublip) liverie</p>
+                    <p class="liverie-info1">file size: 83mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+            <div class="liverie-777-6">
+                <div class="liverie-info">
+                    <p class="liverie-title">delta airlines(classic) liverie</p>
+                    <p class="liverie-info1">file size: 62mb</p>
+                    <p class="liverie-info1">click to download</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer2">
+        <P id="footerp">site last updated: 10/10/2022</P>
+    </footer>
+    <script>
+        function boeing737() {
+            document.getElementById("liveries-box2").style.display = "flex";
+            document.getElementById("liveries-box3").style.display = "none";
+        }
+
+        function boeing777() {
+            document.getElementById("liveries-box3").style.display = "flex";
+            document.getElementById("liveries-box2").style.display = "none";
+        }
+    </script>
+</body>
+</html>
