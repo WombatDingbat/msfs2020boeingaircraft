@@ -64,13 +64,18 @@
               <p class="info777">1. download the file from mega</p>
               <p class="info777">2. extract the .rar file</p>
               <p class="info777">3. copy your extracted file</p>
-              <p class="info777">4. locate your community folder for msfs2020</p>
-              <p class="info2">steam: c:\program Files (x86)\steam\steamapps\common\microsoftflightsimulator\community</p>
-              <p class="info2">xbox: c:\users\yourusername\appdata\local\packages\microsoft.flightsimulator_8wekyb3d8bbwe\localcache\packages\community</p>
-              <p class="info2">disc: c:\users\yourusername\appdata\local\msfspackages\community</p>
-              <p class="info777">5. paste the file in the community folder</p>
-              <p class="info777">6. launch msfs. it may take a few minutes first time loading</p>
+              <p class="info777">4. move the extracted file to msfs2020 <a class="community" onclick="openmodel()">community</a> folder</p>
+              <p class="info777">6. launch msfs2020</p>
+              <p class="info777">*note: it can take up to 15 minutes for your flight to load first time*</p>
             </div>
+        </div>
+      </div>
+      <div class="model-files" id="model">
+        <div class="model-stuff">
+            <h1>community folder locations</h1>
+            <p>steam: c:\program Files (x86)\steam\steamapps\common\microsoftflightsimulator\community</p>
+            <p>xbox: c:\users\*yourusername*\appdata\local\packages\microsoft.flightsimulator_8wekyb3d8bbwe\localcache\packages\community</p>
+            <p>disc: c:\users\*yourusername*\appdata\local\msfspackages\community</p>
         </div>
       </div>
       <div class="separator3">
@@ -79,6 +84,23 @@
         <P id="footerp">site last updated: 10/10/2022</P>
       </footer>
 
+      <script>
+        function openmodel() {
+          document.getElementById("model").style.display = "block";
+        }
+
+        window.onclick = function(event) {
+          if (event.target == model) {
+              model.style.display = "none";
+          }
+        }
+
+        document.addEventListener('keydown', function(event){
+          if(event.key === "Escape"){
+              model.style.display = "none";
+          }
+        });
+      </script>
 
       <script type="module">
         // Import the functions you need from the SDKs you need

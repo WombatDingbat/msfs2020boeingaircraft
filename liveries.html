@@ -12,7 +12,7 @@
     <div class="headerbg"> 
         <div class="header">
             Msfs2020 777 - 737
-            <button onClick="document.getElementById('install-block').scrollIntoView();" class="header-button">how to install</button>
+            <button onClick="document.getElementById('liverie-install').scrollIntoView();" class="header-button">how to install</button>
             <a class="header-button" href="index.html">home</a>
         </div>
     </div>
@@ -116,6 +116,21 @@
             </div>
         </div>
     </div>
+    <div class="model-files" id="model">
+        <div class="model-stuff">
+            <h1>community folder locations</h1>
+            <p>steam: c:\program Files (x86)\steam\steamapps\common\microsoftflightsimulator\community</p>
+            <p>xbox: c:\users\*yourusername*\appdata\local\packages\microsoft.flightsimulator_8wekyb3d8bbwe\localcache\packages\community</p>
+            <p>disc: c:\users\*yourusername*\appdata\local\msfspackages\community</p>
+        </div>
+    </div>
+    <div id="liverie-install">
+        <h1>install guide</h1>
+        <p>1. download the .zip file</p>
+        <p>2. extract the file</p>
+        <p>3. move the extracted file to msfs2020 <a class="community" onclick="openmodel()">community</a> folder</p>
+        <p>4. luanch the simulator and try your new liverie</p>
+    </div>
     <footer class="footer2">
         <P id="footerp">site last updated: 10/10/2022</P>
     </footer>
@@ -129,6 +144,22 @@
             document.getElementById("liveries-box3").style.display = "flex";
             document.getElementById("liveries-box2").style.display = "none";
         }
+
+        function openmodel() {
+            document.getElementById("model").style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == model) {
+                model.style.display = "none";
+            }
+        }
+
+        document.addEventListener('keydown', function(event){
+            if(event.key === "Escape"){
+                model.style.display = "none";
+            }
+        });
     </script>
 
     <script>
